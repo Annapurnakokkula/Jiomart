@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JioMart</title>
+    <link rel="icon" href="https://www.jiomart.com/assets/ds2web/jds-icons/jiomart-logo-icon.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<!-- BOOTSTRAP 3 CDN for coursel circle indicator-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <!-- slick slider-->
+   
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+
+
+ <!-- nav Bar-->
+ <style>
+.button1{
+    background-color: #0078ad; 
+color: white; 
+  }
+  .button1:hover {
+background-color: #0c5273;
+color: white;
+height: 30px;
+  }
+  input:focus {
+    outline:none;
+      }
+ 
+/*------ hover dropdown-----*/
+  .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.overlay{
+  position:relative;
+  margin-bottom: -100px;
+  float: right;
+}
+
+.container{
+        width: 100px;
+        height: 300px;
+        padding: 5px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      
+      }
+      .box{
+        width: 300px;
+        margin: 0 10px;
+        transition: 0.5s;
+      }
+      .box:hover {
+       transform: scale(1.1);
+       z-index: 2;
+      }
+
+    
+/*------ slider width ------*/
+.wrapper{
+  padding: 10px 0;
+  overflow-x: hidden;
+  width: 100%;
+  padding-left: 23px;
+  padding-right: 23px;
+  
+}
+
+.slider{
+  padding: 0 15px;
+  
+}
+
+/*------ slider image ------*/
+.slider img{
+  width: 96%;
+    width: 200px;;
+    height: 300px;
+   
+    margin-left: -40px;
+    display: flex;
+    padding-right: 0px;
+    position:relative;
+  
+}
+.slick-initialized .slick-slide{
+  color: #FFF;
+  height: 400px;
+  margin: 0 15px 0 0;
+  display: flex;
+  padding-left: 0px;
+  align-items: center;
+  justify-content: center;
+}
+.slider .slick-slide{
+    height:auto!important;
+    font-size: 40px;
+    padding: 0px 0px;
+line-height: 2;
+font-weight: 700;
+}
+
+/*--------- arrows ---------*/
+.slick-arrow {
+  border: solid;
+  border-width: 0 4px 3px 0;
+  display: flex;
+  background-color: transparent;
+  margin-top: -10px;
+  padding: 2px;
+ 
+  
+}
+.slick-next, .slick-prev{
+      z-index: 8;
+    }
+ .slick-next{
+      margin-right: 0px;
+      right: 0px;
+    }
+    /*--- prev button left margin----*/
+  .slick-prev{
+      margin-left: 10px;
+      left: 10px;
+     }
+
+    /* button size increase / decrease ---*/
+
+  .slick-next:before, .slick-prev:before{
+    color: rgb(181, 174, 174);
+     background-color: rgb(234, 231, 240);
+      font-size: 30px;
+      border-radius: 50%;
+      margin-right: 0px;
+    }
+    .slick-next:before, .slick-prev:before:hover{
+      background-color: white;
+    }
+
+      /* STYLES SPECIFIC TO FOOTER  */
+      .c{
+  height: 400px;
+  width: 95%;
+  text-align: center;
+  margin-left: 80px;
+}
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+}
+
+h4{
+    margin-left: 40px;
+     font-family: Arial, Helvetica, sans-serif; 
+     font-size: 15px; 
+     font-weight: 1000;
+}
+.footer .col {
+  width: 210px;
+  height: auto;
+  float: left;
+}
+
+.footer .col ul {
+  list-style-type: none;
+}
+.footer .col ul li {
+  font-size: 15px;
+  padding: 10px;
+  color: rgb(65, 60, 60);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 545;
+  cursor: pointer;
+  transition: .2s;
+  float: left; 
+}
+
+ </style>
+ 
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg "  style="background-color: #0078ad;">
+  
+        <!-- Threee lines-->
+        <a class="nav-link " href="#" style=" margin-left: 120px; background-color: #0078ad; "><button type="button" class=" button1" style="border: 0px; border-radius: 50%; "><i class="bi bi-list"  style="font-size: 30px; color: white;"></i></button>  </a>
+          
+        <!-- jiomart logo-->
+          <a class="navbar-brand" href="#" style="margin-left: 2px; background-color: #0078ad;"> <button type="button" class=" button1" style=" font-size: 25px; font-weight: 1000; border: 0px;  border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px;"> JioMart <span style="font-size: 11px; font-weight: 600; ">BETA</span></button>  </a>
+        
+          
+         <a class="nav-link" href="#" style="color: white;"> <button type="button" class=" button1" style="font-size: 15px; font-weight: 700; border: 0px;  border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; "> <i class="bi bi-geo-alt"></i> Deliver to Mumbai 400020</button></a>
+           
+          <form class="form-inline my-2 my-lg-0" style="float: right; margin-right: 20px; margin-left: 200px;">
+
+            <div class="input-group" style="border: 0px; ">
+                <span class="input-group-text" style="padding-left: 15px; width: 300px; border: none; background-color: white; border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px;"><i class="bi bi-search"  style="font-size: 20px; padding-right: 16px;"></i> 
+                    <input class="form-control" type="text" placeholder="Search JioMart" aria-label="Search" style="border: none;  background-color: transparent;" >
+                    <span class="input-group-text" style="border: 0px; background-color: white;"><i  class="bi bi-list-ul" style="font-size: 20px; padding-left: 10px;"></i></span></span>
+                </div>
+
+                <a class="nav-link " href="#" style="color: white;"><button type="button" class=" button1" style=" border: 0px; border-radius: 50%; width: 50px; height: 50px;"><i class="bi bi-cart-fill" style="font-size: 20px;"></i> </button></a>
+                <a class="nav-link" href="#" style="color: white;"><button type="button" class=" button1"  style="margin-left: -20px; font-weight: 900; border: 0px;  border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; width: 120px; height: 50px;"> <i class="bi bi-person-fill" style="font-size: 20px;"></i> Sign In </button></a>
+              </form>
+        
+        </nav>
+
+        <!-- navbar groceries hover -->
+        <nav class="navbar navbar-expand-md " style="color: rgb(249, 232, 232); background-color: #0c5273;">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 120px; font-size: 16px; font-weight: 600; ">
+           
+                <ul class="navbar-nav">
+            <li class="nav-item-active dropdown" >
+                <a class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white; padding-right: 20px;">
+                 Groceries
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"  style="padding: 20px;">
+                  <a class="dropdown-item" href="#" style="padding: 10px;">Fruits & Vegetables</a>
+                  <a class="dropdown-item" href="#">Dairy & Bakery</a>
+                  <a class="dropdown-item" href="#">Staples</a>
+                  <a class="dropdown-item" href="#">Snacks & Branded Foods</a>
+                  <a class="dropdown-item" href="#">Beverages</a>
+                  <a class="dropdown-item" href="#">Personal Care</a>
+                  <a class="dropdown-item" href="#">Home Care</a>
+                  <a class="dropdown-item" href="#">Apparel</a>
+                  <a class="dropdown-item" href="#">Home & Kitechen</a>
+                  <a class="dropdown-item" href="#">Mom & Baby Care</a>
+                  <a class="dropdown-item" href="#"> Books</a>
+                  </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white; padding-right: 20px;">
+                  Premium Fruits
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"  style="padding: 20px;">
+                  <a class="dropdown-item" href="#">Apple & pears</a>
+                  <a class="dropdown-item" href="#">Avocado, Peach, Plum </a>
+                  <a class="dropdown-item" href="#">Banana, Melon & Coconut</a>
+                  <a class="dropdown-item" href="#">Cherries, Berries & Exotic Fruits </a>
+                  <a class="dropdown-item" href="#">Citrus, Mango & Grapes</a>
+                  <a class="dropdown-item" href="#">Dates</a>
+                  <a class="dropdown-item" href="#">Pomegranate, Papaya & Pineapple </a>
+                  <a class="dropdown-item" href="#">Seasonal & minor Fruits</a>
+                  </div>
+              </li>
+    
+                <li class="nav-item dropdown">
+                  <a class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white; padding-right: 20px;">
+                  Home & Kitchen
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"  style="padding: 20px;">
+                    <a class="dropdown-item" href="#">Bathroom & Laundry Accessories</a>
+                    <a class="dropdown-item" href="#">Disposables</a>
+                    <a class="dropdown-item" href="#">Furnishing</a>
+                    <a class="dropdown-item" href="#">Furniture</a>
+                    <a class="dropdown-item" href="#">Garden & Outdoor</a>
+                    <a class="dropdown-item" href="#">Home Decor</a>
+                    <a class="dropdown-item" href="#">Kitchenware</a>
+                    <a class="dropdown-item" href="#">Prayer & Spiritual Need</a>
+                    <a class="dropdown-item" href="#">Tableware</a>
+                  </div>
+                </li>
+    
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white; padding-right: 20px;">
+                     Fashion
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"  style="padding: 20px;">
+                      <a class="dropdown-item" href="#">Men</a>
+                      <a class="dropdown-item" href="#">Women</a>
+                      <a class="dropdown-item" href="#">Boys</a>
+                      <a class="dropdown-item" href="#">Girls</a>
+                      <a class="dropdown-item" href="#">Junior Boys</a>
+                      <a class="dropdown-item" href="#">Junior Girls</a>
+                      <a class="dropdown-item" href="#">Infants</a>
+                      <a class="dropdown-item" href="#">Tech</a>
+                    </div>
+                  </li>
+    
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white; padding-right: 20px;">
+                     Electronics
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"  style="padding: 20px;">
+                      <a class="dropdown-item" href="#">Mobiles & Tablets</a>
+                      <a class="dropdown-item" href="#">TV & Speaker</a>
+                      <a class="dropdown-item" href="#">Home Appliances</a>
+                      <a class="dropdown-item" href="#">Computers</a>
+                      <a class="dropdown-item" href="#">Cameras</a>
+                      <a class="dropdown-item" href="#">Kitchen Appliances</a>
+                      <a class="dropdown-item" href="#">Personal care & Grooming</a>
+                      <a class="dropdown-item" href="#">Smart Devices</a>
+                      <a class="dropdown-item" href="#">Gaming</a>
+                      <a class="dropdown-item" href="#">Accessories</a>
+                      <a class="dropdown-item" href="#">1 ton Air Conditioners</a>
+                    </div>
+                  </li>
+    
+                  <li class="nav-item dropdown">
+                    <a class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white; padding-right: 20px;">
+                      Beauty
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"  style="padding: 20px;">
+                      <a class="dropdown-item" href="#">Make-Up</a>
+                      <a class="dropdown-item" href="#">Hair</a>
+                      <a class="dropdown-item" href="#">Skin Care</a>
+                      <a class="dropdown-item" href="#">Fragrances</a>
+                      <a class="dropdown-item" href="#">Personal Care</a>
+                      <a class="dropdown-item" href="#">Mom & Baby</a>
+                      <a class="dropdown-item" href="#">Men's Grooming</a>
+                      <a class="dropdown-item" href="#">Tools & Appliances</a>
+                      <a class="dropdown-item" href="#">Wellness</a>
+                      <a class="dropdown-item" href="#">Fitness</a>
+                      <a class="dropdown-item" href="#">Ayush</a>
+                    </div>
+                  </li>
+    
+                  <li class="nav-item dropdown">
+                    <a class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white; padding-right: 20px;">
+                     Home Improvement
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"  style="padding: 20px;">
+                      <a class="dropdown-item" href="#">Auto Care</a>
+                      <a class="dropdown-item" href="#">Building Supplies & Measuring Tools</a>
+                      <a class="dropdown-item" href="#">Carpentry</a>
+                      <a class="dropdown-item" href="#">Electrical</a>
+                      <a class="dropdown-item" href="#">Hardware & Plumbing</a>
+                      <a class="dropdown-item" href="#">Home Cleaning & Organisation</a>
+                      <a class="dropdown-item" href="#">Industrial & Scientific Supplies</a>
+                      <a class="dropdown-item" href="#">Home Safety & Automation</a>
+                      <a class="dropdown-item" href="#">Kitchen & Bath Fixtures</a>
+                    </div>
+                  </li>
+    
+                  <li class="nav-item dropdown">
+                    <a class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white; padding-right: 20px;">
+                     Sports, Toys & Luggage
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"  style="padding: 20px;">
+                      <a class="dropdown-item" href="#">Toys & Games</a>
+                      <a class="dropdown-item" href="#">Bags & Travel Luggage</a>
+                      <a class="dropdown-item" href="#">Sporting Goods & Fitness Equipment</a>
+                    </div>
+                  </li>
+              </ul>
+              </div>
+          </nav><br>
+    
+          <!-- Courosel-->
+    
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+            </ol>
+            <div class="carousel-inner" style="margin-left: 10px; ">
+              <div class="carousel-item active" >
+                <img class="d-block w-100" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690357228_Aaj_Ki_Deals_Desktop.jpg?im=Resize=(1680,320)" alt="jiomart_couresel1" height="350px">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690954366_Nutritious_Dals_and_Pulses_Desktop.jpg?im=Resize=(1680,320)" alt="jiomart_couresel2" height="350px">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690826067_Super_Saver_Deals_On_Daily_Essentials_Desktop.jpg?im=Resize=(1680,320)" alt="jiomart_couresel3" width="98%" height="350px">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690826229_Must_have_brands__Desktop.jpg?im=Resize=(1680,320)" alt="jiomart_couresel4" width="98%" height="350px">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690903773_Redmi_Smartphones_Desktop.jpg?im=Resize=(1680,320)" alt="jiomart_couresel5" width="98%" height="350px">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690875549_Bedsheets_from_Karigars_of_Rajasthan__Desktop.jpg?im=Resize=(1680,320)" alt="jiomart_couresel6" width="98%" height="350px">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690904192_Televisions_Desktop.jpg?im=Resize=(1680,320)" alt="jiomart_couresel7" width="98%" height="350px">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <br>
+    
+        <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1686738824_bLOCK_BUSTER_dEALS_160x320.jpg?im=Resize=(1240,150)" alt="bLOCK_BUSTER_dEALS" width="98%" height="300px" style=" border-radius: 1%; margin-left: 10px; margin-right: 10px;">
+        <br> <br>
+        <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690805396_Mainbanner_1680.jpg?im=Resize=(1240,150)" alt="50% off" width="98%" height="300px" style=" border-radius: 1%; margin-left: 10px; margin-right: 10px;">
+    <br>
+        <!-- Courosel 2 coupons paytm-->
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <!-- card deck 1-->
+                <div class="card-deck" style="margin-left: 10px; width: 99%; border-radius: 30%;">
+                 <div class="card">  <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690805055_Paytm_Wallet_1240x209.jpg?im=Resize=(1241,195)" alt="paytm" height="100px" style="border-radius: 2%;"> </div>
+                 <div class="card">  <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690805115_TWID_1240x209.jpg?im=Resize=(1241,195)" alt="twid" height="100px" style="border-radius: 2%;"> </div>
+                 </div>
+              </div>
+              
+              <div class="carousel-item">
+                <!-- card deck 2-->
+                <div class="card-deck" style="margin-left: 10px; width: 99%;">
+                 <div class="card"> <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690805115_TWID_1240x209.jpg?im=Resize=(1241,195)" alt="twid" height="100px" style="border-radius: 2%;">   </div>
+                 <div class="card">  <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690805086_MobiKwik_1240x209.jpg?im=Resize=(1241,195)" alt="mobile" height="100px" style="border-radius: 2%;"> </div>
+                </div>
+              </div>
+              
+            <div class="carousel-item">
+              <!-- card deck 3-->
+              <div class="card-deck" style="margin-left: 10px; width: 99%;">
+                <div class="card">  <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690805086_MobiKwik_1240x209.jpg?im=Resize=(1241,195)" alt="mobile" height="100px" style="border-radius: 2%;">  </div>
+                <div class="card">  <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683628499_JioPlus_1240x209-px.jpg?im=Resize=(1241,195)" alt="your_number" height="100px" style="border-radius: 2%;">  </div>
+              </div>
+            </div>
+      
+            <div class="carousel-item">
+              <!-- card deck 4-->
+              <div class="card-deck"  style="margin-left: 10px; width: 99%;">
+                <div class="card" style="width: 100px;"> <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683628499_JioPlus_1240x209-px.jpg?im=Resize=(1241,195)" alt="your_number" height="100px" style="border-radius: 2%;"> </div>
+                <div class="card" style="width: 100px;"> <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690804972_BOB_CC_1240x209.jpg?im=Resize=(1241,195)" alt="Bank of baroda" height="100px" style="border-radius: 2%;"> </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!-- card deck 5-->
+              <div class="card-deck" style="margin-left: 10px; width: 99%;">
+                <div class="card" style="width: 100px;"> <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690804972_BOB_CC_1240x209.jpg?im=Resize=(1241,195)" alt="Bank of baroda" height="100px" style="border-radius: 2%;"></div>
+                <div class="card" style="width: 100px;"> <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690805144_Simpl_1240x209.jpg?im=Resize=(1241,195)" alt="Simple" height="100px" style="border-radius: 2%;"> </div>
+              </div>
+            </div>
+          </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div> <br>
+
+      <!-- courosel 3 umbreella img-->
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+           
+            <!-- card deck 1-->
+            <div class="card-deck"  style="margin-left: 10px; width: 99%;">
+              <div class="card">  <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1686819477_ShopForGroceries1240.jpg?im=Resize=(1241,195)" alt="umbrella" >    </div>
+              <div class="card">  <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690903541_Homepage_1240x209.jpg?im=Resize=(1241,195)" alt="first purchase" >  </div>
+            </div>
+          </div>
+      
+          <div class="carousel-item">
+            <!-- card deck 2-->
+            <div class="card-deck"  style="margin-left: 10px; width: 99%;">
+              <div class="card"> <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690903541_Homepage_1240x209.jpg?im=Resize=(1241,195)" alt="first purchase" > </div>
+              <div class="card">  <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690669629_1240x209.jpg?im=Resize=(1241,195)" alt=" coupon" >   </div>
+            </div>
+           </div>
+          
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <br>
+      <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1691037519_1680x320.jpg?im=Resize=(1240,150)" alt="best_deals_offer" width="98%" height="300px" style="margin-left: 15px;">
+      <br> <br>
+      
+      <!-- courosel 4 fresh img-->
+      
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active"> <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690483216_Web_Mumbai_PremiumFruits.jpg?im=Resize=(1680,320)" alt="fresh" width="90%" height="300px" style="margin-left: 5px;"> </div>
+          <div class="carousel-item"> <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1677043775_Website_Wednesday-Bonus1680x320.jpg?im=Resize=(1680,320)" alt="Wednesday-Bonus"  width="90%" height="300px" style="margin-left: 5px;"> </div>  
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>      <br>
+
+      <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1689792932_Trends-Strip_5.jpg?im=Resize=(1240,150)" alt="Trends-Strip" width="98%" height="300px" style=" border-radius: 1%; margin-left: 10px; margin-right: 10px;">  
+      <br>   
+      <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1689836782_1680x320.jpg?im=Resize=(1240,150)" alt="Deals_of_the_week" width="98%" height="300px" style=" border-radius: 1%; margin-left: 10px; margin-right: 10px;">   
+      
+      
+      
+      <h5 style="margin-left: 40px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 1000;">Shop From Top Categories</h5> <br>
+      
+      <!-- slick slider samrtphone cards-->
+     <!--card deck Oil_and_ghee -->
+      
+     
+     <div class="wrapper">
+      <div class="slider">
+         
+        <div class="box"> <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690802773_Oil_and_ghee.jpg?im=Resize=(223,280)" alt="Oil_and_ghee"> </div>
+        <div class="box"> <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690882538_Atta_and_dal.jpg?im=Resize=(223,280)" alt="Atta_and_dal"> </div>
+            <div class="box"> <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690802812_Rice_and_Poha.jpg?im=Resize=(223,280)" alt="Rice_and_Poha"> </div>
+            
+            <div class="box"> <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690802849_men_fashion.jpg?im=Resize=(223,280)" alt="men_fashion"> </div>
+            <div class="box"> <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690802872_Women_fashion.jpg?im=Resize=(223,280)" alt="Women_fashion"> </div>      
+            <div class="box"> <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690802929_kids_fashion.jpg?im=Resize=(223,280)" alt="kids_fashion"> </div>
+            <div class="box"> <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690872713_Smartphones.jpg?im=Resize=(223,280)" alt="Smartphones"> </div>      
+          
+          </div>
+          </div>
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+          
+          <script>
+          $(document).ready(function(){
+            $('.slider').slick({
+              slidesToShow: 5,
+              slidesToScroll: 1,
+              arrows: true,
+              
+              dots: false,
+              speed: 800,
+              infinite: true,
+              autoplaySpeed: 5000,
+              autoplay: true,
+              centerMode: true,
+              padding:'-10px',
+              centerPadding:'50px',
+            
+              focusOnSelect: true,
+              });
+          });
+          </script>
+
+      <!-- slick slider  coursel images-->
+      <div class="wrapper" >
+        <div class="slider">
+            
+              <div class="box"> <img  src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690872770_Washing_machines.jpg?im=Resize=(223,280)" alt="Washing_machines" style="padding: -40px;"></div>
+              <div class="box"> <img  src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690872819_Headphones_and_soundbar.jpg?im=Resize=(223,280)" alt="Headphones_and_soundbar"> </div>
+              <div class="box"> <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690804718_Home_Funishing.jpg?im=Resize=(223,280)" alt="Home_Funishing"></div>
+              <div class="box"> <img  src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690808874_Home_Cleaning.jpg?im=Resize=(223,280)" alt="Home_Cleaning" > </div>
+              <div class="box"> <img  src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690804788_Kitchen_must_haves.jpg?im=Resize=(223,280)" alt="Kitchen_must_haves" > </div>
+              <div class="box"> <img  src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690872862_Laptops_and_Tablets.jpg?im=Resize=(223,280)" alt="Laptops_and_Tablets" > </div>
+              <div class="box"> <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690872904_Kitchen_appliances.jpg?im=Resize=(223,280)" alt="Kitchen_appliances"> </div>
+              </div>
+              </div>
+          
+              <script>
+                $(document).ready(function(){
+    $('.slider').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      arrows: true,
+      
+      dots: false,
+      speed: 800,
+      infinite: true,
+      autoplaySpeed: 5000,
+      autoplay: true,
+      centerMode: true,
+      padding:'-10px',
+      centerPadding:'50px',
+      loop:false,
+      focusOnSelect: true,
+      });
+  });
+  </script>
+      
+      <!-- slick slider  coursel images-->
+
+      <div class="wrapper">
+        <div class="slider">
+
+            <!-- card deck 1-->
+              <div class="box"> <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690872951_Smart_Televisions.jpg?im=Resize=(223,280)" alt="Smart_Televisions" > </div>
+              <div class="box"> <img  src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690805471_Food_and_beverage.jpg?im=Resize=(223,280)" alt="Food_and_beverage"> </div>
+              <div class="box"> <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690806054_Cleaning_essentials.jpg?im=Resize=(223,280)" alt="Cleaning_essentials"> </div>
+              <div class="box"> <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690806075_Beauty_and_personal_care.jpg?im=Resize=(223,280)" alt="Beauty_and_personal_care"> </div>
+              <div class="box"> <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690806094_Karigar-made_Decor.jpg?im=Resize=(223,280)" alt="Karigar-made_Decor"> </div>
+              <div class="box"> <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690806117_Pressure_cooker.jpg?im=Resize=(223,280)" alt="Pressure_cooker"> </div>
+              <div class="box"> <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690806140_Home_decorations.jpg?im=Resize=(223,280)" alt="Home_decorations"> </div>
+            </div>
+        </div>
+        <script>
+          $(document).ready(function(){
+    $('.slider').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      arrows: true,
+      
+      dots: false,
+      speed: 800,
+      infinite: true,
+      autoplaySpeed: 5000,
+      autoplay: true,
+      centerMode: true,
+      padding:'-10px',
+      centerPadding:'50px',
+      loop:false,
+      focusOnSelect: true,
+      });
+  });
+        </script>
+      
+      <h5 style="margin-left: 40px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 1000;">Top Deals</h5> <br>
+      <!-- courosel 9 top deals card body-->
+      
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+           
+            <!-- card deck 1-->
+            <div class="card-deck" style=" margin-left: 30px; margin-right: 10px;">
+              <div class="card" style="border: 0px;">
+                <div >
+                  <span class="overlay" style="margin-bottom: -15px; float: right;"><i class="bi bi-heart"></i></span>
+                  <img class="card-img-top" src="https://www.jiomart.com//images/product/original/491016281/colgate-max-fresh-spicy-fresh-red-gel-toothpaste-150-g-pack-of-2-product-images-o491016281-p491016281-0-202206021942.jpg?im=Resize=(150,150)" alt="Colgate" height="110px" > 
+                </div>
+               
+               
+                 <div class="card-body">
+                  <h6 class="card-text" style=" font-size: 13px;">Colgate max Fresh Spicy Fresh Red Gel Toothpast.. </h6>
+                  <p class="card-text"><b><i class="bi bi-currency-rupee"></i>157.00</b> </p>
+                  <p class="card-text" style="font-size: 12px; text-decoration: line-through; color: gray;"><i class="bi bi-currency-rupee"></i>230.00<button class="btn-outline-success" style="background-color: rgb(225, 249, 232); color: rgb(8, 51, 2); border: 0px; width: 65px; height: 20px; border-radius: 15%;">31% OFF</button></p>
+                  <p class="card-text"><b><button style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; width: 175px; height: 35px; border: 2px solid rgb(239, 235, 235); background-color: white;"><span style="margin-left: 7px; float: left; color: rgb(1, 1, 84); ">Add</span><span style="float: right; color: rgb(1, 1, 84);"><i class="bi bi-plus-lg"></i></span> </button></b></p>
+                </div>
+              </div>
+              <div class="card" style="border: 0px;">
+                <div >
+                  <span class="overlay" style="margin-bottom: -15px; float: right;"><i class="bi bi-heart"></i></span>
+                <img class="card-img-top" src="https://www.jiomart.com/images/product/original/492367966/surf-excel-easy-wash-detergent-powder-5-kg-product-images-o492367966-p590837659-1-202208111657.jpg?im=Resize=(420,420)" alt="Surf Excel" height="125px">
+                </div>
+                <div class="card-body">
+                  <h6 class="card-text" style=" font-size: 13px;">Surf Excel Easy Wash Detergent Powder 5 Kg </h6>
+                  <p class="card-text"><b><i class="bi bi-currency-rupee"></i>585.00</b></p>
+                  <p class="card-text" style="font-size: 12px; text-decoration: line-through; color: gray;"><i class="bi bi-currency-rupee"></i>730.00<button class="btn-outline-success" style="background-color: rgb(225, 249, 232); color: rgb(8, 51, 2); border: 0px; width: 65px; height: 20px; border-radius: 15%;">19% OFF</button></p>
+                  <p class="card-text"><b><button style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; width: 175px; height: 35px; border: 2px solid rgb(239, 235, 235); background-color: white;"><span style="margin-left: 7px; float: left; color: rgb(1, 1, 84); ">Add</span><span style="float: right; color: rgb(1, 1, 84);"><i class="bi bi-plus-lg"></i></span></button></b></p>
+                </div>
+              </div>
+              <div class="card" style="border: 0px;">
+                <div >
+                  <span class="overlay" style="margin-bottom: -15px; float: right;"><i class="bi bi-heart"></i></span>
+                <img class="card-img-top" src="https://www.jiomart.com//images/product/original/491984654/parle-marie-biscuits-800-g-product-images-o491984654-p590441794-0-202203150707.jpg?im=Resize=(150,150)" alt="marie biscuits" height="125px">
+                </div>
+                <div class="card-body">
+                  <h6 class="card-text" style=" font-size: 13px;">Parle Marie Biscuits 800 g</h6> 
+                  <p class="card-text"><b><i class="bi bi-currency-rupee"></i>87.00</b></p>
+                  <p class="card-text" style="font-size: 12px; text-decoration: line-through; color: gray;"><i class="bi bi-currency-rupee"></i>175.00<button class="btn-outline-success" style="background-color: rgb(225, 249, 232); color: rgb(8, 51, 2); border: 0px; width: 65px; height: 20px; border-radius: 15%;">50% OFF</button></p>
+                  <p class="card-text"><b><button style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; width: 175px; height: 35px; border: 2px solid rgb(239, 235, 235); background-color: white;"><span style="margin-left: 7px; float: left; color: rgb(1, 1, 84); ">Add</span><span style="float: right; color: rgb(1, 1, 84);"><i class="bi bi-plus-lg"></i></span></button></b></p>
+                </div>
+              </div>
+              <div class="card" style="border: 0px;">
+                <div >
+                  <span class="overlay" style="margin-bottom: -15px; float: right;"><i class="bi bi-heart"></i></span>
+                <img class="card-img-top" src="https://www.jiomart.com//images/product/original/491582579/amul-kool-rose-flavoured-milk-180-ml-bottle-product-images-o491582579-p491582579-0-202203170907.jpg?im=Resize=(150,150)" alt="amul" height="110px">
+                </div>
+                <div class="card-body">
+                  <h6 class="card-text" style="font-size: 13px;">Amul Kool Rose Flavoured Milk 180 ml(Bottle)</h6>
+                  <p class="card-text"><b><i class="bi bi-currency-rupee"></i>24.00</b></p>
+                  <p class="card-text" style="font-size: 12px; text-decoration: line-through; color: gray;"><i class="bi bi-currency-rupee"></i>25.00<button class="btn-outline-success" style="background-color: rgb(225, 249, 232); color: rgb(8, 51, 2); border: 0px; width: 65px; height: 20px; border-radius: 15%;"> 4% OFF</button></p>
+                  <p class="card-text"><b><button style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; width: 175px; height: 35px; border: 2px solid rgb(239, 235, 235); background-color: white;"><span style="margin-left: 7px; float: left; color: rgb(1, 1, 84); ">Add</span><span style="float: right; color: rgb(1, 1, 84);"><i class="bi bi-plus-lg"></i></span></button></b></p>
+                </div>
+              </div>
+              <div class="card" style="border: 0px;">
+                <div >
+                  <span class="overlay" style="margin-bottom: -15px; float: right;"><i class="bi bi-heart"></i></span>
+                <img class="card-img-top" src="https://www.jiomart.com//images/product/original/491890593/pitambari-deepshakti-diya-and-lamps-pooja-oil-900-ml-product-images-o491890593-p590141064-0-202205180439.jpg?im=Resize=(150,150)" alt="Pitambari " height="110px">
+                </div>
+                <div class="card-body">
+                  <h6 class="card-text" style="font-size: 13px;">Pitambari Deepshakti Diya and Lamps Pooja Oil</h6>
+                  <p class="card-text"><b><i class="bi bi-currency-rupee"></i>139</b></p>
+      
+                  <p class="card-text"><br></p>
+                  <p class="card-text"><b><button style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; width: 175px; height: 35px; border: 2px solid rgb(239, 235, 235); background-color: white;"><span style="margin-left: 7px; float: left; color: rgb(1, 1, 84); ">Add</span><span style="float: right; color: rgb(1, 1, 84);"><i class="bi bi-plus-lg"></i></span></button></b></p>
+                </div>
+              </div>
+              <div class="card" style="border: 0px;">
+                <div >
+                  <span class="overlay" style="margin-bottom: -15px; float: right;"><i class="bi bi-heart"></i></span>
+                <img class="card-img-top" src="https://www.jiomart.com//images/product/original/490794273/gulab-sungold-refined-sunflower-oil-15-l-tin-product-images-o490794273-p490794273-0-202209100208.jpg?im=Resize=(150,150)" alt="gulb oil" height="125px">
+                </div>
+                <div class="card-body">
+                  <h6 class="card-text" style="font-size: 13px;">Gulab Sungold Refined Sunflower Oil 15L(Jar)</h6>
+                  <p class="card-text"><b><i class="bi bi-currency-rupee"></i>600.00</b></p>
+                  <p class="card-text" style="font-size: 12px; text-decoration: line-through; color: gray;"><i class="bi bi-currency-rupee"></i>800.00<button class="btn-outline-success" style="background-color: rgb(225, 249, 232); color: rgb(8, 51, 2); border: 0px; width: 65px; height: 20px; border-radius: 15%;">74% OFF</button></p>
+                  <p class="card-text"><b><button style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; width: 175px; height: 35px; border: 2px solid rgb(239, 235, 235); background-color: white;"><span style="margin-left: 7px; float: left; color: rgb(1, 1, 84); ">Add</span><span style="float: right; color: rgb(1, 1, 84);"><i class="bi bi-plus-lg"></i></span></button></b></p>
+                </div>
+              </div>
+              <div class="card" style="border: 0px;">
+                <div >
+                  <span class="overlay" style="margin-bottom: -15px; float: right;"><i class="bi bi-heart"></i></span>
+                  <img class="card-img-top" src="https://www.jiomart.com//images/product/original/491416775/medimix-ayurvedic-18-herbs-classic-soap-150-g-buy-4-get-1-free-product-images-o491416775-p590802948-0-202203170639.jpg?im=Resize=(150,150)" alt="medimix" height="110px">
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-text" style="font-size: 13px;">Medimix Ayurvedic 18- Herbs Classic Soaps 150..</h6>
+                    <p class="card-text"><b><i class="bi bi-currency-rupee"></i>221.00</b></p>
+                    <p class="card-text" style="font-size: 12px; text-decoration: line-through; color: gray;"><i class="bi bi-currency-rupee"></i>330.00<button class="btn-outline-success" style="background-color: rgb(225, 249, 232); color: rgb(8, 51, 2); border: 0px; width: 65px; height: 20px; border-radius: 15%;">33% OFF</button></p>
+                    <p class="card-text"><b><button style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; width: 175px; height: 35px; border: 2px solid rgb(239, 235, 235); background-color: white;"><span style="margin-left: 7px; float: left; color: rgb(1, 1, 84); ">Add</span><span style="float: right; color: rgb(1, 1, 84);"><i class="bi bi-plus-lg"></i></span> </button></b></p>
+                  </div>
+                </div>
+            </div>
+      
+          </div>
+      
+          <div class="carousel-item">
+            <!-- card deck 2-->
+            <div class="card-deck" style=" margin-left: 20px; margin-right: 10px;">
+              <div class="card" style="border: 0px;">
+                <div >
+                  <span class="overlay" style="margin-bottom: -15px; float: right;"><i class="bi bi-heart"></i></span>
+                <img class="card-img-top" src="https://www.jiomart.com//images/product/original/491416775/medimix-ayurvedic-18-herbs-classic-soap-150-g-buy-4-get-1-free-product-images-o491416775-p590802948-0-202203170639.jpg?im=Resize=(150,150)" alt="medimix" height="120px">
+                </div>
+                <div class="card-body">
+                  <h6 class="card-text" style="font-size: 13px;">Medimix Ayurvedic 18- Herbs Classic Soaps 150..</h6>
+                  <p class="card-text"><b><i class="bi bi-currency-rupee"></i>221.00</b></p>
+                  <p class="card-text" style="font-size: 12px; text-decoration: line-through; color: gray;"><i class="bi bi-currency-rupee"></i>330.00<button class="btn-outline-success" style="background-color: rgb(225, 249, 232); color: rgb(8, 51, 2); border: 0px; width: 65px; height: 20px; border-radius: 15%;">33% OFF</button></p>
+                  <p class="card-text"><b><button style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; width: 175px; height: 35px; border: 2px solid rgb(239, 235, 235); background-color: white;"><span style="margin-left: 7px; float: left; color: rgb(1, 1, 84); ">Add</span><span style="float: right; color: rgb(1, 1, 84);"><i class="bi bi-plus-lg"></i></span> </button></b></p>
+                </div>
+              </div>
+              <div class="card" style="border: 0px;">
+                <div >
+                  <span class="overlay" style="margin-bottom: -15px; float: right;"><i class="bi bi-heart"></i></span>
+                <img class="card-img-top" src="https://www.jiomart.com/images/product/original/492367966/surf-excel-easy-wash-detergent-powder-5-kg-product-images-o492367966-p590837659-1-202208111657.jpg?im=Resize=(420,420)" alt="Surf Excel Matic " height="120px">
+                </div>
+                <div class="card-body">
+                  <h6 class="card-text" style="font-size: 13px;">Surf Excel Matic Top Load Detergent Powder 6 kg</h6>
+                  <p class="card-text"><b><i class="bi bi-currency-rupee"></i>1031.00</b></p>
+                  <p class="card-text" style="font-size: 12px; text-decoration: line-through; color: gray;"><i class="bi bi-currency-rupee"></i>1375.00<button class="btn-outline-success" style="background-color: rgb(225, 249, 232); color: rgb(8, 51, 2); border: 0px; width: 65px; height: 20px; border-radius: 15%;">25% OFF</button></p>
+                  <p class="card-text"><b><button style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; width: 175px; height: 35px; border: 2px solid rgb(239, 235, 235); background-color: white;"><span style="margin-left: 7px; float: left; color: rgb(1, 1, 84); ">Add</span><span style="float: right; color: rgb(1, 1, 84);"><i class="bi bi-plus-lg"></i></span> </button></b></p>
+                </div>
+              </div>
+              <div class="card" style="border: 0px;">
+                <div >
+                  <span class="overlay" style="margin-bottom: -15px; float: right;"><i class="bi bi-heart"></i></span>
+                <img class="card-img-top" src="https://www.jiomart.com//images/product/original/492578328/parle-hide-seek-4-fun-flavours-choco-chip-creme-sandwich-biscuits-400-g-product-images-o492578328-p591001086-0-202203170238.jpg?im=Resize=(150,150)" alt="Parle Hide & Seek" height="130px">
+                </div>
+                <div class="card-body">
+                  <h6 class="card-text" style="font-size: 13px;">Parle Hide & Seek 4 Fun flavours Choco Chip..  </h6> 
+                  <p class="card-text"><b><i class="bi bi-currency-rupee"></i>75.00</b></p>
+                  <p class="card-text" style="font-size: 12px; text-decoration: line-through; color: gray;"><i class="bi bi-currency-rupee"></i>150.00<button class="btn-outline-success" style="background-color: rgb(225, 249, 232); color: rgb(8, 51, 2); border: 0px; width: 65px; height: 20px; border-radius: 15%;">50% OFF</button></p>
+                  <p class="card-text"><b><button style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; width: 175px; height: 35px; border: 2px solid rgb(239, 235, 235); background-color: white;"><span style="margin-left: 7px; float: left; color: rgb(1, 1, 84); ">Add</span><span style="float: right; color: rgb(1, 1, 84);"><i class="bi bi-plus-lg"></i></span> </button></b></p>
+                </div>
+              </div>
+              <div class="card" style="border: 0px;">
+                <div >
+                  <span class="overlay" style="margin-bottom: -15px; float: right;"><i class="bi bi-heart"></i></span>
+                <img class="card-img-top" src="https://www.jiomart.com//images/product/original/490022075/amulspray-infant-milk-food-tin-pack-500-g-product-images-o490022075-p490022075-0-202203162307.jpg?im=Resize=(150,150)" alt="Amulspray" height="125px">
+                </div>
+                <div class="card-body">
+                  <h6 class="card-text" style="font-size: 13px;">Amulspray Infant Milk Food Tin Pack 500 g </h6>
+                  <p class="card-text"><b><i class="bi bi-currency-rupee"></i>243.00</b></p>
+                  <p class="card-text"> <br></p>
+                  <p class="card-text"><b><button style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; width: 175px; height: 35px; border: 2px solid rgb(239, 235, 235); background-color: white;"><span style="margin-left: 7px; float: left; color: rgb(1, 1, 84); ">Add</span><span style="float: right; color: rgb(1, 1, 84);"><i class="bi bi-plus-lg"></i></span> </button></b></p>
+                </div>
+              </div>
+              <div class="card" style="border: 0px;">
+                <div >
+                  <span class="overlay" style="margin-bottom: -15px; float: right;"><i class="bi bi-heart"></i></span>
+                <img class="card-img-top" src="https://m.media-amazon.com/images/I/41-MNstxf1L.jpg" alt="Almonds" height="120px">
+                </div>
+                <div class="card-body">
+                  <h6 class="card-text" style="font-size: 13px;">1 kg Kashmiri Mamra Almonds (Badam Giri)</h6>
+                  <p class="card-text"><b><i class="bi bi-currency-rupee"></i>1099.00</b></p>
+                  <p class="card-text" style="font-size: 12px; text-decoration: line-through; color: gray;"><i class="bi bi-currency-rupee"></i>4000.00<button class="btn-outline-success" style="background-color: rgb(225, 249, 232); color: rgb(8, 51, 2); border: 0px; width: 65px; height: 20px; border-radius: 15%;">72% OFF</button></p>
+                  <p class="card-text"><b><button style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; width: 175px; height: 35px; border: 2px solid rgb(239, 235, 235); background-color: white;"><span style="margin-left: 7px; float: left; color: rgb(1, 1, 84); ">Add</span><span style="float: right; color: rgb(1, 1, 84);"><i class="bi bi-plus-lg"></i></span> </button></b></p>
+                </div>
+              </div>
+              <div class="card" style="border: 0px;">
+                <div >
+                  <span class="overlay" style="margin-bottom: -15px; float: right;"><i class="bi bi-heart"></i></span>
+                <img class="card-img-top" src="https://m.media-amazon.com/images/I/61EmeJqHcIL._AC_UF1000,1000_QL80_.jpg" alt="Ariel Complete Detergent Powder" height="115px">
+                </div>
+                <div class="card-body">
+                  <h6 class="card-text" style="font-size: 13px;">Ariel Complete Detergent Powder 4 kg</h6>
+                  <p class="card-text"><b><i class="bi bi-currency-rupee"></i>750.00</b></p>
+                  <p class="card-text" style="font-size: 12px; text-decoration: line-through; color: gray;"><i class="bi bi-currency-rupee"></i>1480.00<button class="btn-outline-success" style="background-color: rgb(225, 249, 232); color: rgb(8, 51, 2); border: 0px; width: 65px; height: 20px; border-radius: 15%;">49% OFF</button></p>
+                  <p class="card-text"><b><button style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; width: 175px; height: 35px; border: 2px solid rgb(239, 235, 235); background-color: white;"><span style="margin-left: 7px; float: left; color: rgb(1, 1, 84); ">Add</span><span style="float: right; color: rgb(1, 1, 84);"><i class="bi bi-plus-lg"></i></span>  </button></b></p>
+                </div>
+              </div>
+              <div class="card" style="border: 0px;">
+                <div >
+                  <span class="overlay" style="margin-bottom: -15px; float: right;"><i class="bi bi-heart"></i></span>
+                <img class="card-img-top" src="https://www.jiomart.com//images/product/original/491252835/tide-jasmine-rose-detergent-powder-5-kg-get-extra-1-kg-free-product-images-o491252835-p590838653-0-202203151949.jpg?im=Resize=(150,150)" alt="Tide Plus" height="112px">
+                </div>
+                <div class="card-body">
+                  <h6 class="card-text" style="font-size: 13px;">Tide Plus Jasmine Rose Detergent Powder 6 kg</h6>
+                  <p class="card-text"><b><i class="bi bi-currency-rupee"></i>851.00</b></p>
+                  <p class="card-text" style="font-size: 12px; text-decoration: line-through; color: gray;"><i class="bi bi-currency-rupee"></i>989.00<button class="btn-outline-success" style="background-color: rgb(225, 249, 232); color: rgb(8, 51, 2); border: 0px; width: 65px; height: 20px; border-radius: 15%;">13% OFF</button></p>
+                  <p class="card-text"><b><button style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; width: 175px; height: 35px; border: 2px solid rgb(239, 235, 235); background-color: white;"><span style="margin-left: 7px; float: left; color: rgb(1, 1, 84); ">Add</span><span style="float: right; color: rgb(1, 1, 84);"><i class="bi bi-plus-lg"></i></span>  </button></b></p>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div> <br>
+      
+      
+      <!-- courosel 13  images-->
+      
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+           
+            <!-- card deck 1-->
+            <div class="card-deck" style="margin-left: 10px;">
+              <div class="card"> <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1685542493_Redmi_Smartphones_Desktop.jpg?im=Resize=(1680,320)" alt="Redmi_Smartphones"> </div>
+              <div class="card"> <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1689958811_Top_Selling_Earbuds_Desktop.jpg?im=Resize=(1680,320)" alt="boat"> </div>
+              <div class="card"> <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1689958868_Smartwatches_Desktop.jpg?im=Resize=(1680,320)" alt="Sumsung watch"> </div>
+            </div>
+          </div>
+      
+          <div class="carousel-item">
+            <!-- card deck 2-->
+            <div class="card-deck" style="margin-left: 10px;">
+              <div class="card"> <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1689958868_Smartwatches_Desktop.jpg?im=Resize=(1680,320)" alt="Sumsung watch"> </div>
+              <div class="card"> <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1687753509_Vivo_Desktop.jpg?im=Resize=(1680,320)" alt="vivo"> </div>
+              <div class="card"> <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1685542752_Mobile_Accessories_Desktop.jpg?im=Resize=(1680,320)" alt="charger"> </div>
+            </div>
+          </div>
+         
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div> <br>
+      
+      <h5 style="margin-left: 40px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 1000;">Kitchen Must Haves</h5> <br>
+      <!-- card  Kitchen Must Haves -->
+    
+      <div class="wrapper">
+        <div class="slider">
+           
+              <div class="box"> <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690746555_1.jpg?im=Resize=(223,280)" alt="cooking_oil">  </div>
+              <div class="box"> <img  src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690746602_2.jpg?im=Resize=(223,280)" alt="dry_fruits_nuts">  </div>
+              <div class="box"> <img  src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690746688_4.jpg?im=Resize=(223,280)" alt="rice_products">  </div>
+              <div class="box">  <img  src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690746644_3.jpg?im=Resize=(223,280)" alt="fresh_atta">  </div>
+              <div class="box">  <img  src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690746726_5.jpg?im=Resize=(223,280)" alt="masala">  </div>
+              <div class="box">  <img  src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1690746759_6.jpg?im=Resize=(223,280)" alt="dals_spices">  </div>
+            </div>
+          </div>
+
+          <script>
+            $(document).ready(function(){
+    $('.slider').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      arrows: true,
+      
+      dots: false,
+      speed: 800,
+      infinite: true,
+      autoplaySpeed: 5000,
+      autoplay: true,
+      centerMode: true,
+      padding:'-10px',
+      centerPadding:'50px',
+      loop:false,
+      focusOnSelect: true,
+      });
+  });
+          </script>  
+          
+      
+      <h5 style="margin-left: 40px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 1000;">Food & Beverages</h5> <br>
+      <!-- card  Food & Beverages -->
+      
+      <div class="wrapper">
+        <div class="slider">
+              <div class="box"> <img  src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1689776143_2.jpg?im=Resize=(223,280)" alt="biscuits_cookie"> </div>
+              <div class="box">  <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1688126985_5.jpg?im=Resize=(223,280)" alt="noodles">   </div>
+              <div class="box">   <img  src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1688126872_3.jpg?im=Resize=(223,280)" alt="snaks_namkeen">   </div>
+              <div class="box">   <img  src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1689776098_1.jpg?im=Resize=(223,280)" alt="tea_coffee">  </div>
+              <div class="box">   <img  src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1688126930_4.jpg?im=Resize=(223,280)" alt="chocolate">  </div>
+              <div class="box">   <img  src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1688127149_6.jpg?im=Resize=(223,280)" alt="cooldrinks">  </div>
+            </div> 
+            </div>
+            
+            <script>
+              $(document).ready(function(){
+    $('.slider').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      arrows: true,
+      
+      dots: false,
+      speed: 800,
+      infinite: true,
+      autoplaySpeed: 5000,
+      autoplay: true,
+      centerMode: true,
+      padding:'-10px',
+      centerPadding:'50px',
+      loop:false,
+      focusOnSelect: true,
+      });
+  });
+            </script>  
+
+      <!--couresl img -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                 
+                  <!-- card deck 1-->
+                
+                  <div  class="card-deck" style="margin-left: 10px;">
+                   
+                    <div class="box" style="width: 465px;">  <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1688118181_Curd_and_Shrikhand_Desktop.jpg?im=Resize=(1680,320)" alt="curd_shiknad" >  </div>
+                    <div class="box" style="width: 465px;">  <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1688118211_Toast_and_Khari_Desktop.jpg?im=Resize=(1680,320)" alt="toast_khari" >  </div>
+                    <div class="box" style="width: 465px;">  <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1688118238_Milkshakes_and_Smoothies_Desktop.jpg?im=Resize=(1680,320)" alt="milkshake_milkiness" >  </div>
+                  
+                </div></div>
+            
+                <div class="carousel-item">
+                  <!-- card deck 2-->
+                  <div class="card-deck" style="margin-left: 10px;">
+            
+                    <div class="box" style="width: 465px; ">  <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1688118238_Milkshakes_and_Smoothies_Desktop.jpg?im=Resize=(1680,320)" alt="milkshake_milkiness">  </div>
+                    <div class="box" style="width: 465px;"> <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1688168668_CheeseBanner_RoundEdge2.jpg?im=Resize=(1680,320)" alt="chezze"> </div>
+                    <div class="box" style="width: 465px;">  <img class="card-img-top" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1688168640_1680X320ROUNDED.jpg?im=Resize=(1680,320)" alt="frozen_food">   </div>
+                  </div> 
+                  </div>
+                 </div>
+                
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <br>
+      <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684958110_Homepage.jpg?im=Resize=(1240,150)" alt="continue_shopping" width="98%" style="border-radius: 1.5%; margin-left: 15px; "> <br><br>
+      <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1675955392_Jio_Cares_1240x194.jpg?im=Resize=(1240,150)" alt="jiomartcares"  width="98%" style="border-radius: 1.5%; margin-left: 15px;"> <br> <br>
+      
+      <!-- footer starts-->
+      <footer>
+      <div class="c">
+        <div class="footer">
+          <div class="contain">
+          <div class="col">
+            <h4>All Categories</h4> 
+            <ul>
+              <li>Grocery</li>
+              <li>Electronics</li>
+              <li>Fashion</li>
+              <li>Beauty</li>
+              <li>Home & Kitchen</li>
+              <li>Premium Fruits</li>
+              <li>Books</li>
+              <li>Furniture</li>
+            </ul>
+          </div>
+          <div class="col" style="width: 260px;">
+           <h4 style="margin-left: 0px; margin-right: -20px; ">Popular Categories</h4>
+            <ul>
+              <li>Staples</li><br>
+              <li style="margin-left: 0px; margin-right: 100px;">Beverages</li>
+              <li>Personal care</li>
+              <li>Home Care</li>
+              <li>Fruits & Vegetables</li>
+              <li>Bady Care</li>
+              <li style="margin-left: auto; margin-right: -10px;">Snaks & Branded Foods</li>
+              <li >Dairy & Bakery</li>
+            </ul>
+          </div>
+          <div class="col" style="width: 210px;">
+           <h4 style="margin-left: auto; margin-right: -35px;">Customer Account</h4>
+            <ul>
+              <li style="margin-left: -10px;">My Account</li>
+              <li style="margin-left: -10px;  margin-right: 40px;">My Orders</li>
+              <li style="margin-left: -10px;  margin-right: 60px;">Wishlist</li>
+              <li style="margin-left: -10px;">Payment Methods</li>
+              <li style="margin-left: -10px; margin-right: -40px;">Delivery Addresses</li>
+              <li style="margin-left: -10px;">JioMart Wallet</li>
+            </ul>
+          </div>
+          <div class="col" style="width: 280px;">
+            <h4><span style="margin-left: 0px; margin-right: 100px;">Help Support</span></h4>
+            <ul>
+              <li style="margin-left: -5px;">About Us</li>
+              <li><span style="margin-right: 99px;">FAQ</span></li>
+              <li>Terms & Conditions</li>
+              <li>Privacy Policy</li>
+              <li>E-Waste Policy</li>
+              <li style="margin-right: 32px;">Cancellation & Return <span style="margin-right: 111px;">Policy</span></li>
+              <li>Shipping & Delivery Policy</li>
+              <li>AC Installation by resQ</li>
+            </ul>
+          </div>
+          <div class="col" style="width: 355px;">
+           <h5><span style="font-size: 22px; font-weight: 600; margin-left: -70px; margin-right: 190px;">Contact Us</span></h5>
+            <ul>
+              <li style="padding: 0px; font-size: 14px; margin-left: -55px;">WhatsApp us: <a href="" >70003 70003</a> </li> <br>
+              <li style="padding: 0px; font-size: 14px; margin-left: -55px;">Call us: <a href=""> 1800 890 1222</a></li> <br>
+              <li style="padding: 0px; font-size: 14px; margin-left: -55px;">8:00 AM to 8:00 PM, 365 days</li> <br><br>
+              <li style="padding: 0px; font-size: 14px; margin-left: -55px;">Please note that you are accessing the BETA</li>
+              <li style="padding: 0px; font-size: 14px; margin-left: -55px;">version of <a href="">jiomart.com</a> </li> <br><br><br>
+              <li style="padding: 0px; font-size: 14px; margin-left: -55px;">Should you encounter any bugs, glitches, lack</li>
+              <li style="padding: 0px; font-size: 14px; margin-left: -55px;">of functionality, delayed deliveries, billing</li>
+              <li style="padding: 0px; font-size: 14px; margin-left: -55px;">errors or other problems on the beta website,</span> </li>
+              <li style="padding: 0px; font-size: 14px; margin-left: -55px;">please email us on <a href="">cs@jiomart.com</a></li> <br><br>
+              <li style=" font-size: 25px; font-family: Arial, Helvetica, sans-serif; font-weight: 600; margin-left: -65px;"><b>Download the app</b> </li>
+             <li style="display: grid; grid-template-columns: auto auto; margin-left: -50px; padding: 0px;"><img src="https://www.jiomart.com/assets/ds2web/jds-icons/google-play-icon.svg" alt="google_pay">
+               <span style="padding-left: 15px;"><img src="https://www.jiomart.com/assets/ds2web/jds-icons/ios_app_icon.svg" alt="apple_store"></span>  </li> 
+            </ul>
+           </div>
+        </div>
+        </div>
+        </div>
+        <hr>
+        <p style="text-align: center; margin-left: -230px; font-size: 12px; font-family: Arial, Helvetica, sans-serif;" >
+          <img src="https://www.jiomart.com/assets/ds2web/jds-icons/jiomart-logo-icon.svg" alt="" style="padding-right: 20px;">© 2023 All rights reserved. Reliance Retail Ltd. <span style=" float: right; font-size: 12px; margin-right: 150px; font-family: Arial, Helvetica, sans-serif;">Best viewed on Microsoft Edge 81+, Mozilla Firefox 75+, Safari 5.1.5+, Google Chrome 80+</span> </p>
+        </footer>
+        <!-- END OF FOOTER -->
+</body>
+</html>
